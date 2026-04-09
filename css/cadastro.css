@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0b1a33, #122b5c);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #12803a;
+}
+
+/* 🔥 NOVO */
+.link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.link a {
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

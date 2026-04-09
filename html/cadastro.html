@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Cadastro</h2>
+
+    <input id="nome" placeholder="Nome completo">
+
+    <input id="email" type="email" placeholder="Email">
+
+    <!-- 🔥 IMPORTANTE -->
+    <input id="senha" type="password" placeholder="Senha (mínimo 8 caracteres)">
+
+    <!-- 🔥 NOVO -->
+    <select id="tipoUsuario">
+        <option value="1">Usuário comum</option>
+        <option value="2">Administrador</option>
+    </select>
+
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <p class="link">
+        Já tem conta?
+        <a href="login.html">Fazer login</a>
+    </p>
+</div>
+
+<script src="../js/cadastro.js"></script>
+
+</body>
+</html>

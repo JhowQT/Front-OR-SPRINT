@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trilha</title>
+    <link rel="stylesheet" href="../css/trilhas.css">
+</head>
+<body>
+
+<header>
+    <button class="voltar" onclick="voltar()">← Voltar</button>
+    <h1>Trilha de Carreira</h1>
+</header>
+
+<div class="container">
+
+    <div id="trilha" class="card"></div>
+
+    <div class="card">
+        <h3>Comentários</h3>
+
+        <div id="comentarios"></div>
+
+        <textarea id="comentario" placeholder="Escreva seu comentário..."></textarea>
+        <button class="btn" onclick="comentar()">Comentar</button>
+    </div>
+
+    <div class="card">
+        <h3>Links relacionados</h3>
+        <div id="links"></div>
+    </div>
+
+</div>
+
+<script src="../js/trilhas.js"></script>
+</body>
+</html>

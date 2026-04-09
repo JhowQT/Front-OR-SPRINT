@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #0b1a33, #122b5c);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* BOTÃO VOLTAR */
+.voltar {
+    background: #1e4ed8;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.voltar:hover {
+    background: #163bb3;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* NOME */
+.card h2 {
+    margin-bottom: 10px;
+    color: #0b1a33;
+}
+
+/* EMAIL */
+.card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* FOTO (futuro) */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #1e4ed8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 15px;
+}
