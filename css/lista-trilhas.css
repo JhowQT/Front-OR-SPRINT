@@ -19,7 +19,13 @@ header h1 {
     margin: 0;
 }
 
-/* BOTÃO PERFIL */
+/* 🔥 NOVO: AGRUPAR BOTÕES */
+.acoes-header {
+    display: flex;
+    gap: 10px;
+}
+
+/* BOTÕES HEADER */
 header button {
     background: #1e4ed8;
     color: white;

@@ -8,7 +8,15 @@
 
 <header>
     <h1>Trilhas de Carreira</h1>
-    <button onclick="irPerfil()">Perfil</button>
+
+    <div class="acoes-header">
+        <button onclick="irPerfil()">Perfil</button>
+
+        <!-- 🔥 BOTÃO ADMIN (COMEÇA ESCONDIDO) -->
+        <button id="btnAdmin" onclick="irAdmin()" style="display: none;">
+            ⚙️ Admin
+        </button>
+    </div>
 </header>
 
 <div id="container"></div>

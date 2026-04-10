@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+}
+
+header {
+    background-color: #2f3640;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: #e84118;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.usuario:last-child {
+    border-bottom: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.email {
+    font-size: 14px;
+    color: gray;
+}
+
+.tipo {
+    font-size: 12px;
+    color: #40739e;
+}
+
+button.deletar {
+    background-color: #c23616;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.deletar:hover {
+    background-color: #e84118;
+}

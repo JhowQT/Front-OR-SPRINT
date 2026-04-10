@@ -1,5 +1,7 @@
 const API = "http://localhost:8080";
 
+const usuario = JSON.parse(localStorage.getItem("usuario"));
+
 async function carregar() {
     try {
         const token = localStorage.getItem("token");
@@ -28,7 +30,6 @@ async function carregar() {
         const container = document.getElementById("container");
         container.innerHTML = "";
 
-        // 🔥 SEU BACKEND USA "data"
         json.data.forEach(t => {
             const div = document.createElement("div");
             div.className = "card";
@@ -51,6 +52,31 @@ async function carregar() {
     }
 }
 
+// ================= ADMIN =================
+function verificarAdmin() {
+
+    console.log("USUARIO LOGADO:", usuario);
+
+    if (!usuario) return;
+
+    // 🔥 TENTA PEGAR O TIPO DE TODAS AS FORMAS POSSÍVEIS
+    const tipo =
+        usuario.nomeTipoUsuario ||
+        usuario.tipoUsuario?.nomeTipoUsuario ||
+        usuario.tipoUsuario;
+
+    console.log("TIPO USUARIO:", tipo);
+
+    if (tipo && tipo.toUpperCase().includes("ADMIN")) {
+        document.getElementById("btnAdmin").style.display = "inline-block";
+    }
+}
+
+function irAdmin() {
+    window.location.href = "admin-usuarios.html";
+}
+
+// ================= OUTRAS =================
 function abrir(id) {
     window.location.href = `trilhas.html?id=${id}`;
 }
@@ -59,4 +85,6 @@ function irPerfil() {
     window.location.href = "perfil.html";
 }
 
+// INIT
 carregar();
+verificarAdmin();
