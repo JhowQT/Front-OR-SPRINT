@@ -10,7 +10,7 @@ function verificarAdmin() {
 
     if (!usuario) {
         alert("Usuário não logado!");
-        window.location.href = "login.html";
+        window.location.href = "login.html"; 
         return;
     }
 
