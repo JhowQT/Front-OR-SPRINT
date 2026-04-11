@@ -13,7 +13,48 @@
 
 <div class="container">
 
-    <div class="card" id="perfil"></div>
+    <div class="card">
+
+        <!-- TOPO: AVATAR + INFO -->
+        <div class="perfil-topo">
+
+            <div class="avatar-area">
+                <div id="avatarContainer"></div>
+
+                <label for="fotoInput" class="file-label">
+                    Alterar
+                </label>
+                <input type="file" id="fotoInput">
+            </div>
+
+            <div class="info-area">
+                <h2 id="nome"></h2>
+                <p id="email"></p>
+
+                <div id="badgeTipo"></div>
+                <div id="status"></div>
+            </div>
+
+        </div>
+
+        <!-- AÇÕES -->
+        <div class="acoes">
+            <button class="btn-editar" onclick="toggleEdicao()">Editar Perfil</button>
+            <button class="btn-foto" onclick="enviarFoto()">Salvar Foto</button>
+        </div>
+
+        <!-- FORM -->
+        <div id="formEdicao" class="hidden">
+            <input type="text" id="novoNome" placeholder="Novo nome">
+            <input type="email" id="novoEmail" placeholder="Novo email">
+            <input type="password" id="novaSenha" placeholder="Nova senha">
+            <button onclick="salvar()">Salvar Alterações</button>
+        </div>
+
+        <!-- FEEDBACK -->
+        <div id="mensagem"></div>
+
+    </div>
 
 </div>
 
