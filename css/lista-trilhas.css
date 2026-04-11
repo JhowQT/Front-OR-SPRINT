@@ -1,25 +1,27 @@
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f1f5f9;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f2937, #374151); /* 🔥 padrão global */
     margin: 0;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(90deg, #0b1a33, #122b5c);
-    color: white;
-    padding: 20px 40px;
+    background: #111827;
+    padding: 18px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #374151;
 }
 
+/* TÍTULO */
 header h1 {
-    font-size: 22px;
-    margin: 0;
+    color: #f9fafb;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-/* 🔥 NOVO: AGRUPAR BOTÕES */
+/* GRUPO BOTÕES */
 .acoes-header {
     display: flex;
     gap: 10px;
@@ -27,66 +29,80 @@ header h1 {
 
 /* BOTÕES HEADER */
 header button {
-    background: #1e4ed8;
+    background: #f97316;
     color: white;
     border: none;
-    padding: 10px 18px;
-    border-radius: 20px;
+    padding: 8px 14px;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
     transition: 0.3s;
 }
 
 header button:hover {
-    background: #163bb3;
+    background: #ea580c;
+    transform: translateY(-1px);
 }
 
 /* CONTAINER */
 #container {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 /* CARD */
 .card {
-    background: white;
+    background: #ffffff;
     padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25); /* 🔥 forte */
+    border: 1px solid #e5e7eb;
+    position: relative;
+    transition: 0.25s;
+}
+
+/* DETALHE LARANJA */
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #f97316;
+    border-radius: 14px 0 0 14px;
 }
 
 /* HOVER */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
 }
 
-/* TÍTULO */
+/* TITULO */
 .card h2 {
-    margin: 0 0 10px 0;
-    color: #0b1a33;
+    color: #111827;
+    margin-bottom: 10px;
 }
 
-/* DESCRIÇÃO */
+/* TEXTO */
 .card p {
-    color: #555;
+    color: #4b5563;
     margin-bottom: 15px;
 }
 
 /* BOTÃO */
 .card button {
-    background: #1e4ed8;
+    background: #f97316;
     color: white;
     border: none;
-    padding: 10px 18px;
+    padding: 10px 16px;
     border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
     transition: 0.3s;
 }
 
 .card button:hover {
-    background: #163bb3;
+    background: #ea580c;
 }

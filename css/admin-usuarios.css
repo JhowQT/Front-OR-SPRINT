@@ -1,78 +1,116 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f6fa;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f2937, #374151);
     margin: 0;
 }
 
+/* HEADER */
 header {
-    background-color: #2f3640;
-    color: white;
-    padding: 15px;
+    background: #111827;
+    padding: 18px 25px;
+    border-bottom: 1px solid #374151;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+header h1 {
+    color: #f9fafb;
+    font-size: 20px;
+    margin: 0;
+}
+
 header button {
-    background-color: #e84118;
-    border: none;
+    background: #f97316;
     color: white;
-    padding: 8px 12px;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.2s;
 }
 
+header button:hover {
+    background: #ea580c;
+}
+
+/* CONTAINER */
 .container {
-    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
 }
 
+/* CARD PRINCIPAL */
 .card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    border: 1px solid #e5e7eb;
 }
 
+/* TITULO */
+.card h2 {
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+/* LISTA DE USUÁRIOS */
 .usuario {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 10px;
+    background: #f9fafb;
+    transition: 0.2s;
 }
 
-.usuario:last-child {
-    border-bottom: none;
+/* HOVER */
+.usuario:hover {
+    background: #fff7ed;
+    border-color: #f97316;
 }
 
+/* INFO */
 .info {
     display: flex;
     flex-direction: column;
 }
 
 .nome {
-    font-weight: bold;
+    font-weight: 600;
+    color: #111827;
 }
 
 .email {
     font-size: 14px;
-    color: gray;
+    color: #6b7280;
 }
 
 .tipo {
     font-size: 12px;
-    color: #40739e;
+    margin-top: 4px;
+    background: #f3f4f6;
+    padding: 4px 8px;
+    border-radius: 6px;
+    width: fit-content;
+    color: #374151;
 }
 
+/* BOTÃO DELETAR */
 button.deletar {
-    background-color: #c23616;
+    background: #ef4444;
     color: white;
     border: none;
-    padding: 6px 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.2s;
 }
 
 button.deletar:hover {
-    background-color: #e84118;
+    background: #dc2626;
 }
