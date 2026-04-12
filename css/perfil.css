@@ -180,3 +180,19 @@ button {
     font-size: 13px;
     color: #16a34a;
 }
+
+/* BOTÃO SAIR */
+.btn-sair {
+    margin-left: auto;
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-sair:hover {
+    background: #dc2626;
+}

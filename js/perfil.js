@@ -98,6 +98,18 @@ async function enviarFoto() {
     carregar();
 }
 
+// 🔥 NOVO: SAIR
+function sair() {
+    if (!confirm("Deseja realmente sair?")) return;
+
+    // limpa sessão
+    localStorage.removeItem("usuario");
+    localStorage.removeItem("token");
+
+    // redireciona
+    window.location.href = "login.html";
+}
+
 // VOLTAR
 function voltar() {
     window.location.href = "lista-trilhas.html";
