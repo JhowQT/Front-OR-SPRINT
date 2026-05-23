@@ -151,3 +151,7 @@ Projeto desenvolvido para fins acadêmicos (FIAP).
 
 🔥 **Dica final:**
 Sempre teste esse front com o back-end rodando, senão as requisições não vão funcionar.
+
+
+## SWAGGER
+* https://orangeroute-oracle-production.up.railway.app/swagger-ui/index.html#/
