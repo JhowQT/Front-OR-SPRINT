@@ -109,7 +109,7 @@ Este front depende de um back-end Java rodando.
 Exemplo comum:
 
 ```js
-fetch("http://localhost:8080/api/usuarios")
+fetch("https://orangeroute-oracle-production.up.railway.app/swagger-ui/index.html#/usuario-controller/buscarUsuarioPorId")
 ```
 
 Se necessário, ajuste as URLs para o seu back-end.
