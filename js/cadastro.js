@@ -1,4 +1,4 @@
-const API = "http://localhost:8080";
+const API = "https://orangeroute-oracle-production.up.railway.app";
 
 async function cadastrar() {
     const nome = document.getElementById("nome").value.trim();

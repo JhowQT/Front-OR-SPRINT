@@ -1,4 +1,4 @@
-const API = "http://localhost:8080";
+const API = "https://orangeroute-oracle-production.up.railway.app";
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");

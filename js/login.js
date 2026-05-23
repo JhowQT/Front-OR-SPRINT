@@ -1,4 +1,4 @@
-const API = "http://localhost:8080";
+const API = "https://orangeroute-oracle-production.up.railway.app";
 
 async function login() {
     const email = document.getElementById("email").value;
